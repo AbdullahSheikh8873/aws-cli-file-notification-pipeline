@@ -208,17 +208,28 @@ aws logs tail "/aws/lambda/aws-cli-file-notification-lambda" --since 10m --regio
 
 ## Screenshots
 
-The assignment evidence includes:
 
-1. S3 bucket with the sample file
-2. SQS message
-3. Email notification received
-4. CloudWatch Lambda logs
-5. Architecture diagram
+### S3 File
+
+![S3 File](./screenshots/s3-file.png)
+
+### SQS Message
+
+![SQS Message](./screenshots/sqs-message.png)
+
+### Email Received
+
+![Email Received](./screenshots/email-received.png)
+
+### CloudWatch Logs
+
+![CloudWatch Logs](./screenshots/cloudwatch-logs.png)
 
 Sensitive information such as AWS account IDs, ARNs, email addresses, access keys, and credentials should be blurred or removed from screenshots.
 
 ## Architecture Diagram
+
+![Architecture Diagram](./screenshots/architecture-diagram.png)
 
 S3 Upload → AWS CLI → SQS → Lambda → S3 Metadata → SNS → Email
 
